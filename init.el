@@ -10,6 +10,10 @@
 
 (require 'fsharp-mode)
 
+;;; Install elixir-mode
+(unless (package-installed-p 'elixir-mode)
+  (package-install 'elixir-mode))
+
 ;;; Set alarm bell
 (setq ring-bell-function 'ignore)
 
